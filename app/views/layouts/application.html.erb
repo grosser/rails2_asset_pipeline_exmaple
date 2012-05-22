@@ -1,7 +1,34 @@
-LAYOUT
-Path is <%= path = pipeline_path("application.js") %>
-
-<%= javascript_include_tag path %>
+<table>
+  <tr>
+    <td>JS</td>
+    <td><%= pipeline_path("test.js") %></td>
+    <td><%= javascript_include_tag pipeline_path("test.js") %></td>
+  </tr>
+  <tr>
+    <td>JS with require</td>
+    <td><%= pipeline_path("application.js") %></td>
+    <td><%= javascript_include_tag pipeline_path("application.js") %></td>
+  </tr>
+  <tr>
+    <td>Coffescript</td>
+    <td><%= pipeline_path("coffee.js") %></td>
+    <td><%= javascript_include_tag pipeline_path("coffee.js") %></td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td><%= pipeline_path("simple.css") %></td>
+    <td id="test-simple"><%= stylesheet_link_tag pipeline_path("simple.css") %></td>
+  </tr>
+  <tr>
+    <td>CSS with require</td>
+    <td><%= pipeline_path("application.css") %></td>
+    <td id="test-require"><%= stylesheet_link_tag pipeline_path("application.css") %></td>
+  </tr>
+  <tr>
+    <td>SASS</td>
+    <td><%= pipeline_path("sass.css") %></td>
+    <td id="test-sass"><%= stylesheet_link_tag pipeline_path("sass.css") %></td>
+  </tr>
+</table>
 
 <%= yield %>
-LAYOUT

@@ -1,1 +1,1 @@
-alert("IT WORKS!")
+document.write("YES")
