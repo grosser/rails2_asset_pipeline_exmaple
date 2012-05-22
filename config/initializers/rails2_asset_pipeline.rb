@@ -1,0 +1,3 @@
+Rails2AssetPipeline.setup do |sprockets|
+  # ... additional config ...
+end
