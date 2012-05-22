@@ -5,7 +5,7 @@ namespace :sprockets do
   Rake::SprocketsTask.new do |t|
     t.environment = SPROCKETS_ENV
     t.output = "./public/assets"
-    t.assets = %w(application.js)
+    t.assets = SPROCKETS_ENV.paths.map{|p| Dir["#{p.sub(Rails.root.to_s,'')}/**/*"] }.flatten
   end
 end
 
