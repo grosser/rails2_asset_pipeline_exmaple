@@ -1,3 +1,7 @@
 LAYOUT
+Path is <%= path = pipeline_path("application.js") %>
+
+<%= javascript_include_tag path %>
+
 <%= yield %>
 LAYOUT
