@@ -27,9 +27,11 @@ GEM
       activeresource (= 2.3.14)
       activesupport (= 2.3.14)
       rake (>= 0.8.3)
+    rails2_asset_pipeline (0.1.0)
+      sprockets
     rake (0.9.2.2)
     sass (3.1.18)
-    sprockets (2.3.2)
+    sprockets (2.4.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
@@ -43,6 +45,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-script
   rails (~> 2.3.5)
+  rails2_asset_pipeline
   sass
-  sprockets (~> 2.0)
   sqlite3
