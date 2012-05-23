@@ -1,0 +1,3 @@
+#test-include-mixin:after{
+  @include foo();
+}

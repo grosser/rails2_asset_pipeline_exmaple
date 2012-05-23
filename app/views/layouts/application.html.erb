@@ -30,14 +30,19 @@
     <td id="test-sass"><%= stylesheet_link_tag pipeline_path("sass.css") %></td>
   </tr>
   <tr>
-    <td>SASS @import</td>
+    <td>SASS @import normal</td>
     <td><%= pipeline_path("sass.css") %></td>
-    <td id="test-imported"></td>
+    <td id="test-import"></td>
   </tr>
   <tr>
-    <td>SASS @import mixin</td>
+    <td>SASS @import partial</td>
     <td><%= pipeline_path("sass.css") %></td>
-    <td id="test-imported-mixin"></td>
+    <td id="test-import-partial"></td>
+  </tr>
+  <tr>
+    <td>SASS @include mixin</td>
+    <td><%= pipeline_path("sass.css") %></td>
+    <td id="test-include-mixin"></td>
   </tr>
 </table>
 

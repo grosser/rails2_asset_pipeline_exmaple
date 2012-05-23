@@ -4,5 +4,10 @@
   }
 }
 
-@import "imported_mixin";
-@import "imported";
+@mixin foo() {
+  content: "YES";
+}
+
+@import "import_partial";
+@import "include_mixin";
+@import "import";
