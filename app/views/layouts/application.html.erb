@@ -29,6 +29,16 @@
     <td><%= pipeline_path("sass.css") %></td>
     <td id="test-sass"><%= stylesheet_link_tag pipeline_path("sass.css") %></td>
   </tr>
+  <tr>
+    <td>SASS @import</td>
+    <td><%= pipeline_path("sass.css") %></td>
+    <td id="test-imported"></td>
+  </tr>
+  <tr>
+    <td>SASS @import mixin</td>
+    <td><%= pipeline_path("sass.css") %></td>
+    <td id="test-imported-mixin"></td>
+  </tr>
 </table>
 
 <%= yield %>
