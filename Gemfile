@@ -1,7 +1,7 @@
 source :rubygems
 gem "rails", "~> 2.3.5"
 gem "sqlite3"
-gem "rails2_asset_pipeline"
+gem "rails2_asset_pipeline"# , :path => "~/code/tools/rails2_asset_pipeline"
 gem "coffee-script"
 gem "sass"
 gem "sprockets-sass"
