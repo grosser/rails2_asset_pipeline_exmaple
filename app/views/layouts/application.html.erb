@@ -5,6 +5,11 @@
     <td><%= javascript_include_tag "test.js" %></td>
   </tr>
   <tr>
+    <td>JS with dots</td>
+    <td><%= asset_path("foo.something.js") %></td>
+    <td><%= javascript_include_tag "foo.something" %></td>
+  </tr>
+  <tr>
     <td>JS with require</td>
     <td><%= asset_path("application.js") %></td>
     <td><%= javascript_include_tag "application" %></td>
