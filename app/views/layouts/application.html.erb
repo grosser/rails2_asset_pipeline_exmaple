@@ -15,6 +15,11 @@
     <td><%= javascript_include_tag "application" %></td>
   </tr>
   <tr>
+    <td>JS from public</td>
+    <td><%= compute_public_path "/javascripts/application.js", "javascripts" %></td>
+    <td><%= javascript_include_tag "/javascripts/application.js" %></td>
+  </tr>
+  <tr>
     <td>Coffescript</td>
     <td><%= asset_path("coffee.js") %></td>
     <td><%= javascript_include_tag "coffee.js" %></td>
@@ -50,9 +55,24 @@
     <td id="test-include-mixin"></td>
   </tr>
   <tr>
-    <td>from public</td>
-    <td><%= compute_public_path "/javascripts/application.js", "javascripts" %></td>
-    <td><%= javascript_include_tag "/javascripts/application.js" %></td>
+    <td>Image</td>
+    <td><%= asset_path("ok.gif") %></td>
+    <td><%= image_tag "ok.gif" %></td>
+  </tr>
+  <tr>
+    <td>Image via css with erb</td>
+    <td><%= asset_path("image_with_erb.css.erb") %></td>
+    <td id="image_with_erb"><%= stylesheet_link_tag "image_with_erb" %></td>
+  </tr>
+  <tr>
+    <td>Image via css with url</td>
+    <td><%= asset_path("image_via_url.css") %></td>
+    <td id="image_via_url"><%= stylesheet_link_tag "image_via_url" %></td>
+  </tr>
+  <tr>
+    <td>Image via sass with url</td>
+    <td><%= asset_path("image_via_sass_url.css") %></td>
+    <td id="image_via_sass_url"><%= stylesheet_link_tag "image_via_sass_url" %></td>
   </tr>
 </table>
 
