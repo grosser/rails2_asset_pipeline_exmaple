@@ -1,5 +1,5 @@
 source :rubygems
-gem "rails", "~> 2.3.5"
+gem "rails", "~> 2.3.15"
 gem "sqlite3"
 gem "rails2_asset_pipeline"# , :path => "~/code/tools/rails2_asset_pipeline"
 
